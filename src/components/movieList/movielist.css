@@ -11,15 +11,15 @@
  align-self: flex-start;
  font-size: 36px;
 }
-.spinner {
+.iconposition {
  display: flex;
  justify-content: center;
  align-items: center;
 }
 
-.spinner svg {
- height: 40px;
- width: 40px;
+.iconposition svg {
+ height: 80px;
+ width: 60px;
  fill: black;
  animation: rotate 2s infinite linear;
 }
@@ -40,16 +40,38 @@
  gap: 30px;
 }
 .seemore_div {
- background-color: black;
- color: white;
+ background-color: transparent;
+ height: 20px;
+ align-self: center;
+ margin-right: 30px;
+ font-family: "DM SANS", sans-serif;
+ font-size: 18px;
+ line-height: 24px;
+ color: rgba(190, 18, 60, 1);
+ border: none;
+ outline: none;
+ font-weight: 400;
 }
+.featured_cont {
+ display: flex;
+ justify-content: space-between;
+}
+
 /**RESPONSIVENESS STYLING*/
-@media (min-width: 300px) and (max-width: 599px) {
+@media (min-width: 300px) and (max-width: 449px) {
  .movie-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 30px;
+  gap: 1px;
+ }
+}
+@media (min-width: 450px) and (max-width: 599px) {
+ .movie-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1px;
  }
 }
 @media (min-width: 600px) and (max-width: 799px) {

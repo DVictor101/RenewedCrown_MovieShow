@@ -39,11 +39,10 @@ export async function FetchMovie() {
 
   const data = await response.json();
   const results = data.results;
-  console.log(results);
   return results;
  } catch (error) {
   throw new Error(
-   `Network Error, ${error.message}`
+   `Network Error, ${error.message} data, Check your data connection or Reload`
   );
  }
 }

@@ -27,3 +27,18 @@ img[data-testid="movie-poster"] {
  font-size: 0.9rem;
  color: #888;
 }
+/**RESPONSIVENESS STYLING*/
+@media (min-width: 300px) and (max-width: 449px) {
+ .movie-card {
+  width: 90%;
+  height: 490px;
+  text-align: left;
+ }
+}
+@media (min-width: 450px) and (max-width: 599px) {
+ .movie-card {
+  width: 90%;
+  height: 490px;
+  text-align: left;
+ }
+}

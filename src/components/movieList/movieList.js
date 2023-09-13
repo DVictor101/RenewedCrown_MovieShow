@@ -14,8 +14,6 @@ function MovieList() {
  const [currentPage, setCurrentPage] =
   useState(1);
  const moviesPerPage = 10;
- const [totalMovies, setTotalMovies] =
-  useState(0);
 
  useEffect(() => {
   const fetchMovies = async () => {
@@ -25,7 +23,6 @@ function MovieList() {
    try {
     const data = await FetchMovie();
     console.log(data);
-    setTotalMovies(data.length); // Set the total number of movies
     const startIndex =
      (currentPage - 1) * moviesPerPage;
     const endIndex = startIndex + moviesPerPage;
@@ -34,10 +31,8 @@ function MovieList() {
      endIndex
     );
 
-    setMovies((prevMovies) => [
-     ...prevMovies,
-     ...slicedMovies,
-    ]);
+    // Reset movies when loading more
+    setMovies(slicedMovies);
     setLoading(false);
    } catch (error) {
     setError(error.message);
@@ -55,11 +50,11 @@ function MovieList() {
  if (loading) {
   return (
    <div className="iconposition">
-    {
-     <svg>
-      <use href={`${icons}#icon-loader`}></use>
-     </svg>
-    }
+    <h2>Featured Movie</h2>{" "}
+    {/* Display "Featured Movie" while loading */}
+    <svg>
+     <use href={`${icons}#icon-loader`}></use>
+    </svg>
    </div>
   );
  }
@@ -71,21 +66,19 @@ function MovieList() {
  return (
   <div className="movielist">
    <div className="movielist_cont">
-    <h2>Featured Movie</h2>
-    {movies.length < totalMovies && (
+    <div className="featured_cont">
+     <h2>Featured Movie</h2>
      <button
       className="seemore_div"
       onClick={handleSeeMoreClick}
      >
       See More
      </button>
-    )}
+    </div>
     <div className="movie-grid">
-     {movies
-      .slice(0, moviesPerPage)
-      .map((movie) => (
-       <Card key={movie.id} movie={movie} />
-      ))}
+     {movies.map((movie) => (
+      <Card key={movie.id} movie={movie} />
+     ))}
     </div>
    </div>
   </div>

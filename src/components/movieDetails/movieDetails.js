@@ -5,6 +5,8 @@ import React, {
 } from "react";
 import { useParams } from "react-router-dom";
 import { FetchMovieDetails } from "../../movieAPI";
+import LIKEICON from "../../Assets/favorite.png";
+import FAVORITEICON from "../../Assets/fovorite_1.png";
 
 function MovieDetails() {
  const { id } = useParams();
@@ -12,6 +14,7 @@ function MovieDetails() {
   useState(null);
  const [loading, setLoading] = useState(true);
  const [error, setError] = useState(null);
+ const [isLiked, setIsLiked] = useState(false); // State to track liked status
 
  // Function to convert a date to UTC format
  const convertToUTC = (dateString) => {
@@ -41,6 +44,10 @@ function MovieDetails() {
   fetchMovieDetails();
  }, [id]);
 
+ const toggleLike = () => {
+  setIsLiked(!isLiked); // Toggle liked status
+ };
+
  if (loading) {
   return <div>Loading...</div>;
  }
@@ -57,9 +64,21 @@ function MovieDetails() {
      alt={movieDetails.title}
      data-testid="movie-poster"
     />
-    <h2 data-testid="movie-title">
-     {movieDetails.title}
-    </h2>
+    <div className="title_div">
+     <h2 data-testid="movie-title">
+      {movieDetails.title}
+     </h2>
+     <div
+      className="btn_like"
+      onClick={toggleLike}
+     >
+      <img
+       className="btn_img"
+       src={isLiked ? FAVORITEICON : LIKEICON}
+       alt="like button"
+      />
+     </div>
+    </div>
     <p data-testid="movie-release-date">
      {convertToUTC(movieDetails.release_date)}
     </p>
