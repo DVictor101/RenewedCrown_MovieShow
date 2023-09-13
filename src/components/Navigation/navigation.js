@@ -11,7 +11,6 @@ const Navigation = () => {
      className="logo"
      alt="tv logo"
     />
-
     <h2 className="companyName">MovieBox</h2>
    </div>
    <div className="moviesearch_container">

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"; // Import the Link component from React
 
 const Card = ({ movie }) => {
   return (
-    <Link to={`/movies/${movie.id}`}>
+    <Link className="removedecoration" to={`/movies/${movie.id}`}>
       <div className="movie-card" data-testid="movie-card">
         <img
           src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}

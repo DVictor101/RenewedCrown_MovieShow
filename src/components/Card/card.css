@@ -11,7 +11,12 @@ img[data-testid="movie-poster"] {
  border-radius: 4px;
  margin-bottom: 10px;
 }
-
+.removedecoration {
+ text-decoration: none;
+}
+.removedecoration:visited {
+ text-decoration: none;
+}
 .movie-card h2 {
  font-size: 1.2rem;
  margin: 0;

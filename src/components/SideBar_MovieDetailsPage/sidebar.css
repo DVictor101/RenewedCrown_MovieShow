@@ -102,39 +102,12 @@
 /**RESPONSIVENESS STYLING*/
 @media only screen and (max-width: 600px) {
  .companylogo_cont {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  border-bottom: 1px solid grey;
-  border-radius: 0 40px 40px 0;
+  display: none;
  }
 }
 @media (min-width: 600px) and (max-width: 799px) {
- .companytitle_cont {
-  width: 25%;
-  margin-left: 5px;
- }
- .companyName {
-  font-family: "DM Sans", sans-serif;
-  margin-left: 1px;
- }
- .moviesearch_container {
-  width: 40%;
- }
- .signin_cont {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 20px;
- }
- .signin {
-  margin-right: 3px;
- }
 }
 @media (min-width: 800px) and (max-width: 1023px) {
- 
 }
 @media (min-width: 1024px) and (max-width: 1104px) {
- 
 }

@@ -57,23 +57,23 @@
  margin: 2px;
 }
 /**RESPONSIVENESS STYLING*/
-@media only screen and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 599px) {
+ .nav {
+  flex-direction: column;
+ }
  .companytitle_cont {
-  width: 25%;
+  width: 100%;
   margin-left: 5px;
  }
  .companyName {
-  font-family: "DM Sans", sans-serif;
   margin-left: 1px;
  }
  .moviesearch_container {
-  width: 40%;
+  width: 100%;
+  margin-top: -30px;
  }
  .signin_cont {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 30%;
  }
  .signin {
   margin-right: 3px;

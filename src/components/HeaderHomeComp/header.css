@@ -5,11 +5,10 @@
  height: 600px;
 }
 /**RESPONSIVENESS STYLING*/
-@media only screen and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 599px) {
  .header {
-  height: 350px;
+  height: 560px;
   background-size: cover;
-  background-color: blanchedalmond;
  }
 }
 @media (min-width: 600px) and (max-width: 799px) {

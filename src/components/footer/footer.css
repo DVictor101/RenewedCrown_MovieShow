@@ -36,3 +36,17 @@
 .text_two {
  color: #6b7280;
 }
+@media (min-width: 300px) and (max-width: 599px) {
+ .footer {
+  padding: 40px 0;
+ }
+ .footer_cont {
+  width: 90%;
+ }
+}
+@media (min-width: 600px) and (max-width: 799px) {
+ .header {
+  height: 400px;
+  background-size: cover;
+ }
+}
