@@ -57,6 +57,9 @@
   height: 80%;
   width: 52%;
  }
+ .imdb_div {
+  width: 100%;
+ }
  .title {
   font-size: 38px;
   font-weight: 700;

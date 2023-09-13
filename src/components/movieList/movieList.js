@@ -54,7 +54,7 @@ function MovieList() {
 
  if (loading) {
   return (
-   <div>
+   <div className="iconposition">
     {
      <svg>
       <use href={`${icons}#icon-loader`}></use>
@@ -72,13 +72,6 @@ function MovieList() {
   <div className="movielist">
    <div className="movielist_cont">
     <h2>Featured Movie</h2>
-    <div className="movie-grid">
-     {movies
-      .slice(0, moviesPerPage)
-      .map((movie) => (
-       <Card key={movie.id} movie={movie} />
-      ))}
-    </div>
     {movies.length < totalMovies && (
      <button
       className="seemore_div"
@@ -87,6 +80,13 @@ function MovieList() {
       See More
      </button>
     )}
+    <div className="movie-grid">
+     {movies
+      .slice(0, moviesPerPage)
+      .map((movie) => (
+       <Card key={movie.id} movie={movie} />
+      ))}
+    </div>
    </div>
   </div>
  );

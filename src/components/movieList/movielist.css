@@ -11,6 +11,28 @@
  align-self: flex-start;
  font-size: 36px;
 }
+.spinner {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.spinner svg {
+ height: 40px;
+ width: 40px;
+ fill: black;
+ animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+ 0% {
+  transform: rotate(0);
+ }
+
+ 100% {
+  transform: rotate(360deg);
+ }
+}
+
 .movie-grid {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -19,6 +41,7 @@
 }
 .seemore_div {
  background-color: black;
+ color: white;
 }
 /**RESPONSIVENESS STYLING*/
 @media (min-width: 300px) and (max-width: 599px) {

@@ -4,11 +4,19 @@
  background-repeat: no-repeat;
  height: 600px;
 }
+.pagi_cont {
+ position: absolute;
+ right: 10px;
+ top: 200px;
+}
 /**RESPONSIVENESS STYLING*/
 @media (min-width: 300px) and (max-width: 599px) {
  .header {
   height: 560px;
   background-size: cover;
+ }
+ .pagi_cont {
+  top: 200px;
  }
 }
 @media (min-width: 600px) and (max-width: 799px) {
@@ -16,16 +24,25 @@
   height: 400px;
   background-size: cover;
  }
+ .pagi_cont {
+  top: 150px;
+ }
 }
 @media (min-width: 800px) and (max-width: 1023px) {
  .header {
   height: 400px;
   background-size: cover;
  }
+ .pagi_cont {
+  top: 150px;
+ }
 }
 @media (min-width: 1024px) and (max-width: 1100px) {
  .header {
   height: 500px;
   background-size: cover;
+ }
+ .pagi_cont {
+  top: 200px;
  }
 }
