@@ -1,0 +1,24 @@
+/* MovieDetails.css */
+
+.movie-details {
+ background-color: #fff;
+ padding: 20px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ border-radius: 5px;
+ margin: 20px auto;
+ max-width: 800px;
+}
+
+.movie-details h2 {
+ font-size: 24px;
+ margin-bottom: 10px;
+}
+
+.movie-details p {
+ font-size: 16px;
+ margin-bottom: 8px;
+}
+
+.movie-details_cont {
+ padding: 20px;
+}

@@ -1,0 +1,38 @@
+.footer {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 100px 0;
+}
+.footer_cont {
+ width: 40%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.footerimg {
+ display: flex;
+ justify-content: space-around;
+ width: 70%;
+}
+.text_cont {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 30px;
+ width: 100%;
+}
+.copuright_div {
+ margin-top: 30px;
+ text-align: center;
+}
+.text {
+ font-family: "DM Sans", sans-serif;
+ color: #111827;
+ font-weight: 700;
+ font-size: 18px;
+ line-height: 23.44px;
+}
+.text_two {
+ color: #6b7280;
+}

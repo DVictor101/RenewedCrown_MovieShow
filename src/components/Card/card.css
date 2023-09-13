@@ -1,0 +1,24 @@
+.movie-card {
+ width: 250px;
+ height: 490px;
+ background-color: #fff;
+ text-align: left;
+}
+
+img[data-testid="movie-poster"] {
+ width: 100%;
+ height: 370px;
+ border-radius: 4px;
+ margin-bottom: 10px;
+}
+
+.movie-card h2 {
+ font-size: 1.2rem;
+ margin: 0;
+ font-family: "DM Sans", sans-serif;
+}
+
+.movie-card p {
+ font-size: 0.9rem;
+ color: #888;
+}

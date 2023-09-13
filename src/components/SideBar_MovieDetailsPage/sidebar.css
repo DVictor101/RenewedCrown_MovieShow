@@ -1,0 +1,140 @@
+.companylogo_cont {
+ display: flex;
+ flex-direction: column;
+ width: 226px;
+ border: 1px solid grey;
+ border-radius: 0 40px 40px 0;
+}
+.logo_cont {
+ display: flex;
+ margin-top: 52px;
+ margin-left: 20px;
+}
+.movies_cont {
+ height: 86px;
+ color: rgba(190, 18, 60, 1);
+ background-color: rgba(190, 18, 60, 0.2);
+}
+.logo {
+ width: 50px;
+ height: 50px;
+ color: rgba(51, 51, 51, 1);
+ font-family: "DM Sans", sans-serif;
+ font-size: 24px;
+ font-weight: 700;
+ line-height: 24px;
+ letter-spacing: 0em;
+ text-align: left;
+}
+.companyName {
+ color: rgba(102, 102, 102, 1);
+ font-weight: 700;
+ font-family: "DM Sans", sans-serif;
+}
+.logos_cont {
+ margin-top: 70px;
+}
+.indiv_logo_cont {
+ color: rgba(102, 102, 102, 1);
+ font-family: "Poppins", sans-serif;
+ height: 86px;
+ padding-left: 42px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.movies_cont {
+ color: rgba(190, 18, 60, 1);
+ background-color: rgba(190, 18, 60, 0.2);
+}
+.currentmovie {
+ color: rgba(190, 18, 60, 1);
+}
+.alignment_correction {
+ display: flex;
+}
+.playmovie {
+ width: 170px;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ height: 210px;
+ margin-left: 28px;
+ border-radius: 20px;
+ border: 1px solid rgba(190, 18, 60, 1);
+}
+.playmovietext {
+ font-family: "Poppins", sans-serif;
+ font-size: 15px;
+ font-weight: 600;
+ line-height: 23px;
+ letter-spacing: 0em;
+ text-align: left;
+ color: rgba(51, 51, 51, 0.8);
+}
+.othertext {
+ font-family: "Poppins", sans-serif;
+ font-size: 12px;
+ font-weight: 500;
+ line-height: 18px;
+ letter-spacing: 0em;
+ text-align: left;
+ color: rgba(102, 102, 102, 1);
+}
+.startplaying_cont {
+ width: 112px;
+ height: 30px;
+ border-radius: 30px;
+ background-color: rgba(190, 18, 60, 0.2);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: rgba(190, 18, 60, 1);
+ margin-top: 10px;
+}
+.playtext_cont {
+ padding: 0 10px;
+}
+.logout_cont {
+ margin-top: 30px;
+}
+/**RESPONSIVENESS STYLING*/
+@media only screen and (max-width: 600px) {
+ .companylogo_cont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  border-radius: 0 40px 40px 0;
+ }
+}
+@media (min-width: 600px) and (max-width: 799px) {
+ .companytitle_cont {
+  width: 25%;
+  margin-left: 5px;
+ }
+ .companyName {
+  font-family: "DM Sans", sans-serif;
+  margin-left: 1px;
+ }
+ .moviesearch_container {
+  width: 40%;
+ }
+ .signin_cont {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+ }
+ .signin {
+  margin-right: 3px;
+ }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+ 
+}
+@media (min-width: 1024px) and (max-width: 1104px) {
+ 
+}

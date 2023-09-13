@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router";
 import HomePage from "./pages/homepage/homePage";
-import MovieDetails from "./components/movieDetails/movieDetails";
+import MovieDetailsPage from "./pages/MovieDetailsPage/MovieDetailsPage";
 
 function App() {
  return (
@@ -14,7 +14,7 @@ function App() {
     />
     <Route
      path="/movies/:id"
-     element={<MovieDetails />}
+     element={<MovieDetailsPage />}
     />
    </Routes>
   </div>

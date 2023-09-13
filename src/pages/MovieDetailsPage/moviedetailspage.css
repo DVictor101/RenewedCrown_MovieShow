@@ -1,0 +1,10 @@
+.moviedetailspage {
+ display: flex;
+}
+/**RESPONSIVENESS STYLING*/
+@media only screen and (max-width: 600px) {
+ .moviedetailspage {
+  display: flex;
+  flex-direction: column;
+ }
+}
